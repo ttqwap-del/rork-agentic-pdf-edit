@@ -1,0 +1,26 @@
+{
+  "name": "agentic-pdf-runner",
+  "main": "index.ts",
+  "compatibility_date": "2026-04-29",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "RUN_COORDINATOR",
+        "class_name": "RunCoordinator"
+      },
+      { "name": "STUDIO_CATALOG", "class_name": "StudioCatalog" }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "RunCoordinator"
+      ]
+    },
+    { "tag": "v2-private-studio", "new_sqlite_classes": ["StudioCatalog"] }
+  ]
+}

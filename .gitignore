@@ -1,0 +1,7 @@
+node_modules
+.env
+.expo
+web-agentic-pdf/dist/
+agentic-pdf-runner/.wrangler/
+web-agentic-pdf/.wrangler/
+
